@@ -1,0 +1,13 @@
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-1
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 1.0 min on mps
+
+Test AUROC: 0.9368
+Test PR-AUC: 0.6493
+Test anomaly rate: 0.095
+==============================================================

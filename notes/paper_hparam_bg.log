@@ -1,0 +1,69 @@
+[Tue Sep 15 19:18:13 IST 2026] Starting paper-hparam sanity run
+  Dataset: SMD machine-1-1
+  Seed: 0
+  Hyperparameters: d_model=256, n_heads=8, L_seg=32, N_enc=4, N_dec=3, batch=32, epochs=30, lr=5e-4
+  Output file: notes/ff_paperhp_full_smd_machine-1-1_seed0.txt
+  Full log:    notes/paper_hparam_run_20260915_191813.log
+
+Device: mps, seed: 0
+Dataset: smd machine-1-1
+  Train shape: (28479, 38), Test shape: (28479, 38)
+  Test anomaly rate: 0.095
+Variant: full  (use_swse=True, use_mswea=True)
+Effective batch size: 64
+Fusionformer params: 11,112,472
+Discriminator params: 600,449
+
+Training 30 epochs with paper-matched hyperparameters:
+  d_model=256, n_heads=8, L_seg=32, T=96, tau=24
+  epoch  1/30  pred_MSE=0.0933  D_loss=nan  F_loss=0.0933
+  epoch  2/30  pred_MSE=0.0686  D_loss=nan  F_loss=0.0686
+  epoch  3/30  pred_MSE=0.0625  D_loss=nan  F_loss=0.0625
+  epoch  4/30  pred_MSE=0.0603  D_loss=nan  F_loss=0.0603
+  epoch  5/30  pred_MSE=0.0586  D_loss=nan  F_loss=0.0586
+  epoch  6/30  pred_MSE=0.0572  D_loss=nan  F_loss=0.0572
+  epoch  7/30  pred_MSE=0.0560  D_loss=nan  F_loss=0.0560
+  epoch  8/30  pred_MSE=0.0549  D_loss=nan  F_loss=0.0549
+  epoch  9/30  pred_MSE=0.0531  D_loss=nan  F_loss=0.0531
+  epoch 10/30  pred_MSE=0.0531  D_loss=nan  F_loss=0.0531
+  epoch 11/30  pred_MSE=0.0514  D_loss=nan  F_loss=0.0514
+  epoch 12/30  pred_MSE=0.2484  D_loss=nan  F_loss=0.2484
+  epoch 13/30  pred_MSE=0.2861  D_loss=nan  F_loss=0.2861
+  epoch 14/30  pred_MSE=0.2854  D_loss=nan  F_loss=0.2854
+  epoch 15/30  pred_MSE=0.2857  D_loss=nan  F_loss=0.2857
+  epoch 16/30  pred_MSE=0.2854  D_loss=nan  F_loss=0.2854
+  epoch 17/30  pred_MSE=0.2854  D_loss=nan  F_loss=0.2854
+  epoch 18/30  pred_MSE=0.2852  D_loss=nan  F_loss=0.2852
+  epoch 19/30  pred_MSE=0.2852  D_loss=nan  F_loss=0.2852
+  epoch 20/30  pred_MSE=0.2851  D_loss=nan  F_loss=0.2851
+  epoch 21/30  pred_MSE=0.2851  D_loss=nan  F_loss=0.2851
+  epoch 22/30  pred_MSE=0.2851  D_loss=nan  F_loss=0.2851
+  epoch 23/30  pred_MSE=0.2851  D_loss=nan  F_loss=0.2851
+  epoch 24/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+  epoch 25/30  pred_MSE=0.2849  D_loss=nan  F_loss=0.2849
+  epoch 26/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+  epoch 27/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+  epoch 28/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+  epoch 29/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+  epoch 30/30  pred_MSE=0.2850  D_loss=nan  F_loss=0.2850
+Training took 105.8 min
+
+Scoring test set via forecast error...
+
+FAITHFUL FUSIONFORMER RESULTS (per Wang et al. 2025)
+==============================================================
+Dataset: smd machine-1-1
+Model: Fusionformer forecasting (T=96, tau=24), seed=0
+Hyperparameters (paper-matched): d_model=256, n_heads=8, L_seg=32, N_enc=4, N_dec=3
+Fusionformer params: 11,112,472, Discriminator params: 600,449
+Training: 30 epochs, batch 32, lr_F=0.0005, lr_D=0.00025, adv weight=0.0
+Wall-clock: 105.8 min on mps
+
+Test AUROC: 0.9230
+Test PR-AUC: 0.6148
+Test anomaly rate: 0.095
+==============================================================
+
+Saved: notes/ff_paperhp_full_smd_machine-1-1_seed0.txt
+
+[Tue Sep 15 21:04:42 IST 2026] Done. Result file: notes/ff_paperhp_full_smd_machine-1-1_seed0.txt

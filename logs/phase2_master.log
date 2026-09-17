@@ -1,0 +1,7 @@
+===========================================================
+Phase 2 ablation sweep started at Sat Sep  5 00:44:45 BST 2026
+===========================================================
+
+===== PRIORITY 1: no_swse on SMD =====
+
+----- [1] variant=no_swse dataset=smd id=machine-1-1 seed=0 @ 00:44 -----

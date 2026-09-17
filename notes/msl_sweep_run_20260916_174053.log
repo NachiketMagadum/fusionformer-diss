@@ -1,0 +1,118 @@
+[Wed Sep 16 17:40:53 IST 2026] Starting MSL sweep
+
+[Wed Sep 16 17:40:53 IST 2026] FF full  channel=M-1 seed=0
+Device: mps, seed: 0
+Dataset: msl M-1
+  Train shape: (2209, 55), Test shape: (2277, 55)
+  Test anomaly rate: 0.501
+Variant: full  (use_swse=True, use_mswea=True)
+Effective batch size: 64
+Fusionformer params: 3,540,120
+Discriminator params: 861,569
+
+Training 15 epochs with paper-matched hyperparameters:
+  d_model=252, n_heads=6, L_seg=4, T=96, tau=24
+  epoch  1/15  pred_MSE=0.0467  D_loss=nan  F_loss=0.0467
+  epoch  2/15  pred_MSE=0.0295  D_loss=nan  F_loss=0.0295
+  epoch  3/15  pred_MSE=0.0277  D_loss=nan  F_loss=0.0277
+  epoch  4/15  pred_MSE=0.0270  D_loss=nan  F_loss=0.0270
+  epoch  5/15  pred_MSE=0.0265  D_loss=nan  F_loss=0.0265
+  epoch  6/15  pred_MSE=0.0264  D_loss=nan  F_loss=0.0264
+  epoch  7/15  pred_MSE=0.0260  D_loss=nan  F_loss=0.0260
+  epoch  8/15  pred_MSE=0.0259  D_loss=nan  F_loss=0.0259
+  epoch  9/15  pred_MSE=0.0256  D_loss=nan  F_loss=0.0256
+  epoch 10/15  pred_MSE=0.0254  D_loss=nan  F_loss=0.0254
+  epoch 11/15  pred_MSE=0.0254  D_loss=nan  F_loss=0.0254
+  epoch 12/15  pred_MSE=0.0253  D_loss=nan  F_loss=0.0253
+  epoch 13/15  pred_MSE=0.0251  D_loss=nan  F_loss=0.0251
+  epoch 14/15  pred_MSE=0.0250  D_loss=nan  F_loss=0.0250
+  epoch 15/15  pred_MSE=0.0249  D_loss=nan  F_loss=0.0249
+Training took 518.5 min
+
+Scoring test set via forecast error...
+
+FAITHFUL FUSIONFORMER RESULTS (per Wang et al. 2025)
+==============================================================
+Dataset: msl M-1
+Model: Fusionformer forecasting (T=96, tau=24), seed=0
+Hyperparameters (paper-matched): d_model=252, n_heads=6, L_seg=4, N_enc=1, N_dec=1
+Fusionformer params: 3,540,120, Discriminator params: 861,569
+Training: 15 epochs, batch 64, lr_F=0.00015, lr_D=7.5e-05, adv weight=0.0
+Wall-clock: 518.5 min on mps
+
+Test AUROC: 0.5321
+Test PR-AUC: 0.5152
+Test anomaly rate: 0.501
+==============================================================
+
+Saved: notes/ff_true_full_msl_M-1_seed0.txt
+
+[Thu Sep 17 02:19:50 IST 2026] FF full  channel=M-1 seed=1
+Device: mps, seed: 1
+Dataset: msl M-1
+  Train shape: (2209, 55), Test shape: (2277, 55)
+  Test anomaly rate: 0.501
+Variant: full  (use_swse=True, use_mswea=True)
+Effective batch size: 64
+Fusionformer params: 3,540,120
+Discriminator params: 861,569
+
+Training 15 epochs with paper-matched hyperparameters:
+  d_model=252, n_heads=6, L_seg=4, T=96, tau=24
+  epoch  1/15  pred_MSE=0.0485  D_loss=nan  F_loss=0.0485
+  epoch  2/15  pred_MSE=0.0290  D_loss=nan  F_loss=0.0290
+  epoch  3/15  pred_MSE=0.0274  D_loss=nan  F_loss=0.0274
+  epoch  4/15  pred_MSE=0.0269  D_loss=nan  F_loss=0.0269
+  epoch  5/15  pred_MSE=0.0264  D_loss=nan  F_loss=0.0264
+  epoch  6/15  pred_MSE=0.0261  D_loss=nan  F_loss=0.0261
+  epoch  7/15  pred_MSE=0.0259  D_loss=nan  F_loss=0.0259
+  epoch  8/15  pred_MSE=0.0259  D_loss=nan  F_loss=0.0259
+  epoch  9/15  pred_MSE=0.0255  D_loss=nan  F_loss=0.0255
+  epoch 10/15  pred_MSE=0.0256  D_loss=nan  F_loss=0.0256
+  epoch 11/15  pred_MSE=0.0252  D_loss=nan  F_loss=0.0252
+  epoch 12/15  pred_MSE=0.0251  D_loss=nan  F_loss=0.0251
+  epoch 13/15  pred_MSE=0.0251  D_loss=nan  F_loss=0.0251
+  epoch 14/15  pred_MSE=0.0251  D_loss=nan  F_loss=0.0251
+  epoch 15/15  pred_MSE=0.0249  D_loss=nan  F_loss=0.0249
+Training took 585.0 min
+
+Scoring test set via forecast error...
+
+FAITHFUL FUSIONFORMER RESULTS (per Wang et al. 2025)
+==============================================================
+Dataset: msl M-1
+Model: Fusionformer forecasting (T=96, tau=24), seed=1
+Hyperparameters (paper-matched): d_model=252, n_heads=6, L_seg=4, N_enc=1, N_dec=1
+Fusionformer params: 3,540,120, Discriminator params: 861,569
+Training: 15 epochs, batch 64, lr_F=0.00015, lr_D=7.5e-05, adv weight=0.0
+Wall-clock: 585.0 min on mps
+
+Test AUROC: 0.5340
+Test PR-AUC: 0.5182
+Test anomaly rate: 0.501
+==============================================================
+
+Saved: notes/ff_true_full_msl_M-1_seed1.txt
+
+[Thu Sep 17 12:05:38 IST 2026] FF full  channel=M-1 seed=42
+Device: mps, seed: 42
+Dataset: msl M-1
+  Train shape: (2209, 55), Test shape: (2277, 55)
+  Test anomaly rate: 0.501
+Variant: full  (use_swse=True, use_mswea=True)
+Effective batch size: 64
+Fusionformer params: 3,540,120
+Discriminator params: 861,569
+
+Training 15 epochs with paper-matched hyperparameters:
+  d_model=252, n_heads=6, L_seg=4, T=96, tau=24
+  epoch  1/15  pred_MSE=0.0469  D_loss=nan  F_loss=0.0469
+  epoch  2/15  pred_MSE=0.0289  D_loss=nan  F_loss=0.0289
+  epoch  3/15  pred_MSE=0.0274  D_loss=nan  F_loss=0.0274
+  epoch  4/15  pred_MSE=0.0268  D_loss=nan  F_loss=0.0268
+  epoch  5/15  pred_MSE=0.0268  D_loss=nan  F_loss=0.0268
+  epoch  6/15  pred_MSE=0.0262  D_loss=nan  F_loss=0.0262
+  epoch  7/15  pred_MSE=0.0262  D_loss=nan  F_loss=0.0262
+  epoch  8/15  pred_MSE=0.0258  D_loss=nan  F_loss=0.0258
+  epoch  9/15  pred_MSE=0.0257  D_loss=nan  F_loss=0.0257
+  epoch 10/15  pred_MSE=0.0255  D_loss=nan  F_loss=0.0255

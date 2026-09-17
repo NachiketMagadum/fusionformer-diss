@@ -1,0 +1,987 @@
+[Wed Sep 16 05:46:24 IST 2026] Starting LSTM baseline sweep
+
+[Wed Sep 16 05:46:24 IST 2026] SMD machine-1-1 seed=0
+Device: mps, seed: 0
+Dataset: smd machine-1-1
+  Train shape: (28479, 38), Test shape: (28479, 38)
+  Test anomaly rate: 0.095
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1192
+  epoch  2/15  loss=0.0747
+  epoch  3/15  loss=0.0687
+  epoch  4/15  loss=0.0662
+  epoch  5/15  loss=0.0646
+  epoch  6/15  loss=0.0631
+  epoch  7/15  loss=0.0618
+  epoch  8/15  loss=0.0609
+  epoch  9/15  loss=0.0603
+  epoch 10/15  loss=0.0598
+  epoch 11/15  loss=0.0593
+  epoch 12/15  loss=0.0589
+  epoch 13/15  loss=0.0586
+  epoch 14/15  loss=0.0582
+  epoch 15/15  loss=0.0579
+Wall-clock training: 1.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-1
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 1.0 min on mps
+
+Test AUROC: 0.9368
+Test PR-AUC: 0.6493
+Test anomaly rate: 0.095
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-1_seed0.txt
+
+[Wed Sep 16 05:47:27 IST 2026] SMD machine-1-1 seed=1
+Device: mps, seed: 1
+Dataset: smd machine-1-1
+  Train shape: (28479, 38), Test shape: (28479, 38)
+  Test anomaly rate: 0.095
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1176
+  epoch  2/15  loss=0.0744
+  epoch  3/15  loss=0.0685
+  epoch  4/15  loss=0.0660
+  epoch  5/15  loss=0.0643
+  epoch  6/15  loss=0.0629
+  epoch  7/15  loss=0.0618
+  epoch  8/15  loss=0.0610
+  epoch  9/15  loss=0.0604
+  epoch 10/15  loss=0.0599
+  epoch 11/15  loss=0.0594
+  epoch 12/15  loss=0.0590
+  epoch 13/15  loss=0.0587
+  epoch 14/15  loss=0.0584
+  epoch 15/15  loss=0.0580
+Wall-clock training: 0.9 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-1
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.9 min on mps
+
+Test AUROC: 0.9410
+Test PR-AUC: 0.6615
+Test anomaly rate: 0.095
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-1_seed1.txt
+
+[Wed Sep 16 05:48:27 IST 2026] SMD machine-1-1 seed=42
+Device: mps, seed: 42
+Dataset: smd machine-1-1
+  Train shape: (28479, 38), Test shape: (28479, 38)
+  Test anomaly rate: 0.095
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1179
+  epoch  2/15  loss=0.0745
+  epoch  3/15  loss=0.0688
+  epoch  4/15  loss=0.0662
+  epoch  5/15  loss=0.0645
+  epoch  6/15  loss=0.0631
+  epoch  7/15  loss=0.0619
+  epoch  8/15  loss=0.0610
+  epoch  9/15  loss=0.0604
+  epoch 10/15  loss=0.0600
+  epoch 11/15  loss=0.0594
+  epoch 12/15  loss=0.0590
+  epoch 13/15  loss=0.0586
+  epoch 14/15  loss=0.0583
+  epoch 15/15  loss=0.0581
+Wall-clock training: 0.9 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-1
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.9 min on mps
+
+Test AUROC: 0.9393
+Test PR-AUC: 0.6591
+Test anomaly rate: 0.095
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-1_seed42.txt
+
+[Wed Sep 16 05:49:27 IST 2026] SMD machine-1-4 seed=0
+Device: mps, seed: 0
+Dataset: smd machine-1-4
+  Train shape: (23706, 38), Test shape: (23707, 38)
+  Test anomaly rate: 0.030
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.0982
+  epoch  2/15  loss=0.0530
+  epoch  3/15  loss=0.0500
+  epoch  4/15  loss=0.0487
+  epoch  5/15  loss=0.0480
+  epoch  6/15  loss=0.0477
+  epoch  7/15  loss=0.0472
+  epoch  8/15  loss=0.0468
+  epoch  9/15  loss=0.0463
+  epoch 10/15  loss=0.0457
+  epoch 11/15  loss=0.0453
+  epoch 12/15  loss=0.0448
+  epoch 13/15  loss=0.0443
+  epoch 14/15  loss=0.0437
+  epoch 15/15  loss=0.0432
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-4
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.9030
+Test PR-AUC: 0.2284
+Test anomaly rate: 0.030
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-4_seed0.txt
+
+[Wed Sep 16 05:50:18 IST 2026] SMD machine-1-4 seed=1
+Device: mps, seed: 1
+Dataset: smd machine-1-4
+  Train shape: (23706, 38), Test shape: (23707, 38)
+  Test anomaly rate: 0.030
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.0980
+  epoch  2/15  loss=0.0528
+  epoch  3/15  loss=0.0497
+  epoch  4/15  loss=0.0486
+  epoch  5/15  loss=0.0479
+  epoch  6/15  loss=0.0474
+  epoch  7/15  loss=0.0470
+  epoch  8/15  loss=0.0466
+  epoch  9/15  loss=0.0462
+  epoch 10/15  loss=0.0457
+  epoch 11/15  loss=0.0453
+  epoch 12/15  loss=0.0449
+  epoch 13/15  loss=0.0444
+  epoch 14/15  loss=0.0437
+  epoch 15/15  loss=0.0432
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-4
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.9010
+Test PR-AUC: 0.2265
+Test anomaly rate: 0.030
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-4_seed1.txt
+
+[Wed Sep 16 05:51:08 IST 2026] SMD machine-1-4 seed=42
+Device: mps, seed: 42
+Dataset: smd machine-1-4
+  Train shape: (23706, 38), Test shape: (23707, 38)
+  Test anomaly rate: 0.030
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.0988
+  epoch  2/15  loss=0.0528
+  epoch  3/15  loss=0.0498
+  epoch  4/15  loss=0.0486
+  epoch  5/15  loss=0.0481
+  epoch  6/15  loss=0.0474
+  epoch  7/15  loss=0.0471
+  epoch  8/15  loss=0.0467
+  epoch  9/15  loss=0.0464
+  epoch 10/15  loss=0.0461
+  epoch 11/15  loss=0.0456
+  epoch 12/15  loss=0.0452
+  epoch 13/15  loss=0.0448
+  epoch 14/15  loss=0.0443
+  epoch 15/15  loss=0.0437
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-1-4
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.9031
+Test PR-AUC: 0.2298
+Test anomaly rate: 0.030
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-1-4_seed42.txt
+
+[Wed Sep 16 05:51:58 IST 2026] SMD machine-2-1 seed=0
+Device: mps, seed: 0
+Dataset: smd machine-2-1
+  Train shape: (23693, 38), Test shape: (23694, 38)
+  Test anomaly rate: 0.049
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1561
+  epoch  2/15  loss=0.1242
+  epoch  3/15  loss=0.1199
+  epoch  4/15  loss=0.1169
+  epoch  5/15  loss=0.1145
+  epoch  6/15  loss=0.1123
+  epoch  7/15  loss=0.1104
+  epoch  8/15  loss=0.1085
+  epoch  9/15  loss=0.1069
+  epoch 10/15  loss=0.1052
+  epoch 11/15  loss=0.1038
+  epoch 12/15  loss=0.1025
+  epoch 13/15  loss=0.1013
+  epoch 14/15  loss=0.1002
+  epoch 15/15  loss=0.0991
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-2-1
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.7529
+Test PR-AUC: 0.3233
+Test anomaly rate: 0.049
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-2-1_seed0.txt
+
+[Wed Sep 16 05:52:48 IST 2026] SMD machine-2-1 seed=1
+Device: mps, seed: 1
+Dataset: smd machine-2-1
+  Train shape: (23693, 38), Test shape: (23694, 38)
+  Test anomaly rate: 0.049
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1543
+  epoch  2/15  loss=0.1237
+  epoch  3/15  loss=0.1198
+  epoch  4/15  loss=0.1168
+  epoch  5/15  loss=0.1142
+  epoch  6/15  loss=0.1122
+  epoch  7/15  loss=0.1102
+  epoch  8/15  loss=0.1083
+  epoch  9/15  loss=0.1066
+  epoch 10/15  loss=0.1053
+  epoch 11/15  loss=0.1037
+  epoch 12/15  loss=0.1024
+  epoch 13/15  loss=0.1013
+  epoch 14/15  loss=0.1002
+  epoch 15/15  loss=0.0991
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-2-1
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.7674
+Test PR-AUC: 0.3286
+Test anomaly rate: 0.049
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-2-1_seed1.txt
+
+[Wed Sep 16 05:53:39 IST 2026] SMD machine-2-1 seed=42
+Device: mps, seed: 42
+Dataset: smd machine-2-1
+  Train shape: (23693, 38), Test shape: (23694, 38)
+  Test anomaly rate: 0.049
+LSTM params: 335,760
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.1562
+  epoch  2/15  loss=0.1241
+  epoch  3/15  loss=0.1199
+  epoch  4/15  loss=0.1168
+  epoch  5/15  loss=0.1143
+  epoch  6/15  loss=0.1122
+  epoch  7/15  loss=0.1103
+  epoch  8/15  loss=0.1086
+  epoch  9/15  loss=0.1069
+  epoch 10/15  loss=0.1054
+  epoch 11/15  loss=0.1039
+  epoch 12/15  loss=0.1026
+  epoch 13/15  loss=0.1013
+  epoch 14/15  loss=0.1001
+  epoch 15/15  loss=0.0990
+Wall-clock training: 0.8 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: smd machine-2-1
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 335,760
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.8 min on mps
+
+Test AUROC: 0.7666
+Test PR-AUC: 0.3218
+Test anomaly rate: 0.049
+==============================================================
+
+Saved: notes/lstm_baseline_smd_machine-2-1_seed42.txt
+
+[Wed Sep 16 05:54:29 IST 2026] SKAB file=0 seed=0
+Device: mps, seed: 0
+Dataset: skab 0
+  Train shape: (573, 8), Test shape: (1147, 8)
+  Test anomaly rate: 0.350
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3954
+  epoch  2/15  loss=0.3896
+  epoch  3/15  loss=0.3756
+  epoch  4/15  loss=0.3700
+  epoch  5/15  loss=0.3551
+  epoch  6/15  loss=0.3466
+  epoch  7/15  loss=0.3375
+  epoch  8/15  loss=0.3271
+  epoch  9/15  loss=0.3223
+  epoch 10/15  loss=0.3219
+  epoch 11/15  loss=0.3183
+  epoch 12/15  loss=0.3097
+  epoch 13/15  loss=0.3067
+  epoch 14/15  loss=0.3073
+  epoch 15/15  loss=0.3040
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 0
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8266
+Test PR-AUC: 0.7044
+Test anomaly rate: 0.350
+==============================================================
+
+Saved: notes/lstm_baseline_skab_0_seed0.txt
+
+[Wed Sep 16 05:54:33 IST 2026] SKAB file=0 seed=1
+Device: mps, seed: 1
+Dataset: skab 0
+  Train shape: (573, 8), Test shape: (1147, 8)
+  Test anomaly rate: 0.350
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3979
+  epoch  2/15  loss=0.3953
+  epoch  3/15  loss=0.3798
+  epoch  4/15  loss=0.3687
+  epoch  5/15  loss=0.3576
+  epoch  6/15  loss=0.3538
+  epoch  7/15  loss=0.3392
+  epoch  8/15  loss=0.3356
+  epoch  9/15  loss=0.3274
+  epoch 10/15  loss=0.3230
+  epoch 11/15  loss=0.3195
+  epoch 12/15  loss=0.3161
+  epoch 13/15  loss=0.3101
+  epoch 14/15  loss=0.3131
+  epoch 15/15  loss=0.3060
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 0
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8282
+Test PR-AUC: 0.7081
+Test anomaly rate: 0.350
+==============================================================
+
+Saved: notes/lstm_baseline_skab_0_seed1.txt
+
+[Wed Sep 16 05:54:35 IST 2026] SKAB file=0 seed=42
+Device: mps, seed: 42
+Dataset: skab 0
+  Train shape: (573, 8), Test shape: (1147, 8)
+  Test anomaly rate: 0.350
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3998
+  epoch  2/15  loss=0.3916
+  epoch  3/15  loss=0.3808
+  epoch  4/15  loss=0.3751
+  epoch  5/15  loss=0.3633
+  epoch  6/15  loss=0.3506
+  epoch  7/15  loss=0.3394
+  epoch  8/15  loss=0.3307
+  epoch  9/15  loss=0.3257
+  epoch 10/15  loss=0.3170
+  epoch 11/15  loss=0.3163
+  epoch 12/15  loss=0.3110
+  epoch 13/15  loss=0.3078
+  epoch 14/15  loss=0.3068
+  epoch 15/15  loss=0.3072
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 0
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8272
+Test PR-AUC: 0.7067
+Test anomaly rate: 0.350
+==============================================================
+
+Saved: notes/lstm_baseline_skab_0_seed42.txt
+
+[Wed Sep 16 05:54:38 IST 2026] SKAB file=1 seed=0
+Device: mps, seed: 0
+Dataset: skab 1
+  Train shape: (572, 8), Test shape: (1145, 8)
+  Test anomaly rate: 0.351
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4114
+  epoch  2/15  loss=0.4151
+  epoch  3/15  loss=0.4013
+  epoch  4/15  loss=0.3933
+  epoch  5/15  loss=0.3837
+  epoch  6/15  loss=0.3808
+  epoch  7/15  loss=0.3634
+  epoch  8/15  loss=0.3578
+  epoch  9/15  loss=0.3562
+  epoch 10/15  loss=0.3500
+  epoch 11/15  loss=0.3410
+  epoch 12/15  loss=0.3371
+  epoch 13/15  loss=0.3279
+  epoch 14/15  loss=0.3249
+  epoch 15/15  loss=0.3211
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 1
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8175
+Test PR-AUC: 0.5993
+Test anomaly rate: 0.351
+==============================================================
+
+Saved: notes/lstm_baseline_skab_1_seed0.txt
+
+[Wed Sep 16 05:54:41 IST 2026] SKAB file=1 seed=1
+Device: mps, seed: 1
+Dataset: skab 1
+  Train shape: (572, 8), Test shape: (1145, 8)
+  Test anomaly rate: 0.351
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4215
+  epoch  2/15  loss=0.4087
+  epoch  3/15  loss=0.4061
+  epoch  4/15  loss=0.3991
+  epoch  5/15  loss=0.4032
+  epoch  6/15  loss=0.3782
+  epoch  7/15  loss=0.3704
+  epoch  8/15  loss=0.3717
+  epoch  9/15  loss=0.3568
+  epoch 10/15  loss=0.3661
+  epoch 11/15  loss=0.3411
+  epoch 12/15  loss=0.3359
+  epoch 13/15  loss=0.3416
+  epoch 14/15  loss=0.3349
+  epoch 15/15  loss=0.3234
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 1
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8165
+Test PR-AUC: 0.5983
+Test anomaly rate: 0.351
+==============================================================
+
+Saved: notes/lstm_baseline_skab_1_seed1.txt
+
+[Wed Sep 16 05:54:44 IST 2026] SKAB file=1 seed=42
+Device: mps, seed: 42
+Dataset: skab 1
+  Train shape: (572, 8), Test shape: (1145, 8)
+  Test anomaly rate: 0.351
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4182
+  epoch  2/15  loss=0.4194
+  epoch  3/15  loss=0.4036
+  epoch  4/15  loss=0.3994
+  epoch  5/15  loss=0.3913
+  epoch  6/15  loss=0.3894
+  epoch  7/15  loss=0.3713
+  epoch  8/15  loss=0.3559
+  epoch  9/15  loss=0.3525
+  epoch 10/15  loss=0.3403
+  epoch 11/15  loss=0.3467
+  epoch 12/15  loss=0.3338
+  epoch 13/15  loss=0.3357
+  epoch 14/15  loss=0.3377
+  epoch 15/15  loss=0.3254
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 1
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8189
+Test PR-AUC: 0.6025
+Test anomaly rate: 0.351
+==============================================================
+
+Saved: notes/lstm_baseline_skab_1_seed42.txt
+
+[Wed Sep 16 05:54:47 IST 2026] SKAB file=2 seed=0
+Device: mps, seed: 0
+Dataset: skab 2
+  Train shape: (566, 8), Test shape: (1075, 8)
+  Test anomaly rate: 0.313
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4343
+  epoch  2/15  loss=0.4282
+  epoch  3/15  loss=0.4221
+  epoch  4/15  loss=0.4151
+  epoch  5/15  loss=0.4067
+  epoch  6/15  loss=0.3969
+  epoch  7/15  loss=0.3856
+  epoch  8/15  loss=0.3737
+  epoch  9/15  loss=0.3616
+  epoch 10/15  loss=0.3504
+  epoch 11/15  loss=0.3409
+  epoch 12/15  loss=0.3324
+  epoch 13/15  loss=0.3257
+  epoch 14/15  loss=0.3200
+  epoch 15/15  loss=0.3152
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 2
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8239
+Test PR-AUC: 0.6609
+Test anomaly rate: 0.313
+==============================================================
+
+Saved: notes/lstm_baseline_skab_2_seed0.txt
+
+[Wed Sep 16 05:54:50 IST 2026] SKAB file=2 seed=1
+Device: mps, seed: 1
+Dataset: skab 2
+  Train shape: (566, 8), Test shape: (1075, 8)
+  Test anomaly rate: 0.313
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4360
+  epoch  2/15  loss=0.4305
+  epoch  3/15  loss=0.4251
+  epoch  4/15  loss=0.4190
+  epoch  5/15  loss=0.4118
+  epoch  6/15  loss=0.4031
+  epoch  7/15  loss=0.3930
+  epoch  8/15  loss=0.3816
+  epoch  9/15  loss=0.3700
+  epoch 10/15  loss=0.3586
+  epoch 11/15  loss=0.3478
+  epoch 12/15  loss=0.3384
+  epoch 13/15  loss=0.3304
+  epoch 14/15  loss=0.3232
+  epoch 15/15  loss=0.3173
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 2
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8294
+Test PR-AUC: 0.6639
+Test anomaly rate: 0.313
+==============================================================
+
+Saved: notes/lstm_baseline_skab_2_seed1.txt
+
+[Wed Sep 16 05:54:53 IST 2026] SKAB file=2 seed=42
+Device: mps, seed: 42
+Dataset: skab 2
+  Train shape: (566, 8), Test shape: (1075, 8)
+  Test anomaly rate: 0.313
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4358
+  epoch  2/15  loss=0.4305
+  epoch  3/15  loss=0.4249
+  epoch  4/15  loss=0.4186
+  epoch  5/15  loss=0.4112
+  epoch  6/15  loss=0.4019
+  epoch  7/15  loss=0.3914
+  epoch  8/15  loss=0.3802
+  epoch  9/15  loss=0.3687
+  epoch 10/15  loss=0.3582
+  epoch 11/15  loss=0.3480
+  epoch 12/15  loss=0.3391
+  epoch 13/15  loss=0.3313
+  epoch 14/15  loss=0.3247
+  epoch 15/15  loss=0.3188
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 2
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.8319
+Test PR-AUC: 0.6729
+Test anomaly rate: 0.313
+==============================================================
+
+Saved: notes/lstm_baseline_skab_2_seed42.txt
+
+[Wed Sep 16 05:54:55 IST 2026] SKAB file=3 seed=0
+Device: mps, seed: 0
+Dataset: skab 3
+  Train shape: (573, 8), Test shape: (1148, 8)
+  Test anomaly rate: 0.352
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3906
+  epoch  2/15  loss=0.3765
+  epoch  3/15  loss=0.3632
+  epoch  4/15  loss=0.3617
+  epoch  5/15  loss=0.3551
+  epoch  6/15  loss=0.3485
+  epoch  7/15  loss=0.3476
+  epoch  8/15  loss=0.3337
+  epoch  9/15  loss=0.3308
+  epoch 10/15  loss=0.3236
+  epoch 11/15  loss=0.3150
+  epoch 12/15  loss=0.3118
+  epoch 13/15  loss=0.3066
+  epoch 14/15  loss=0.3139
+  epoch 15/15  loss=0.3080
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 3
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.9540
+Test PR-AUC: 0.9449
+Test anomaly rate: 0.352
+==============================================================
+
+Saved: notes/lstm_baseline_skab_3_seed0.txt
+
+[Wed Sep 16 05:54:58 IST 2026] SKAB file=3 seed=1
+Device: mps, seed: 1
+Dataset: skab 3
+  Train shape: (573, 8), Test shape: (1148, 8)
+  Test anomaly rate: 0.352
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3937
+  epoch  2/15  loss=0.3840
+  epoch  3/15  loss=0.3780
+  epoch  4/15  loss=0.3630
+  epoch  5/15  loss=0.3594
+  epoch  6/15  loss=0.3544
+  epoch  7/15  loss=0.3511
+  epoch  8/15  loss=0.3359
+  epoch  9/15  loss=0.3313
+  epoch 10/15  loss=0.3269
+  epoch 11/15  loss=0.3285
+  epoch 12/15  loss=0.3165
+  epoch 13/15  loss=0.3136
+  epoch 14/15  loss=0.3170
+  epoch 15/15  loss=0.3086
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 3
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.9537
+Test PR-AUC: 0.9450
+Test anomaly rate: 0.352
+==============================================================
+
+Saved: notes/lstm_baseline_skab_3_seed1.txt
+
+[Wed Sep 16 05:55:01 IST 2026] SKAB file=3 seed=42
+Device: mps, seed: 42
+Dataset: skab 3
+  Train shape: (573, 8), Test shape: (1148, 8)
+  Test anomaly rate: 0.352
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.3924
+  epoch  2/15  loss=0.3752
+  epoch  3/15  loss=0.3731
+  epoch  4/15  loss=0.3727
+  epoch  5/15  loss=0.3569
+  epoch  6/15  loss=0.3514
+  epoch  7/15  loss=0.3490
+  epoch  8/15  loss=0.3386
+  epoch  9/15  loss=0.3373
+  epoch 10/15  loss=0.3279
+  epoch 11/15  loss=0.3193
+  epoch 12/15  loss=0.3160
+  epoch 13/15  loss=0.3136
+  epoch 14/15  loss=0.3098
+  epoch 15/15  loss=0.3126
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 3
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.9522
+Test PR-AUC: 0.9429
+Test anomaly rate: 0.352
+==============================================================
+
+Saved: notes/lstm_baseline_skab_3_seed42.txt
+
+[Wed Sep 16 05:55:04 IST 2026] SKAB file=4 seed=0
+Device: mps, seed: 0
+Dataset: skab 4
+  Train shape: (573, 8), Test shape: (1095, 8)
+  Test anomaly rate: 0.319
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4312
+  epoch  2/15  loss=0.4312
+  epoch  3/15  loss=0.4234
+  epoch  4/15  loss=0.4143
+  epoch  5/15  loss=0.4002
+  epoch  6/15  loss=0.3916
+  epoch  7/15  loss=0.3766
+  epoch  8/15  loss=0.3654
+  epoch  9/15  loss=0.3520
+  epoch 10/15  loss=0.3399
+  epoch 11/15  loss=0.3368
+  epoch 12/15  loss=0.3308
+  epoch 13/15  loss=0.3264
+  epoch 14/15  loss=0.3251
+  epoch 15/15  loss=0.3188
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 4
+Model: LSTM forecasting (T=96, tau=24), seed=0
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.7401
+Test PR-AUC: 0.4788
+Test anomaly rate: 0.319
+==============================================================
+
+Saved: notes/lstm_baseline_skab_4_seed0.txt
+
+[Wed Sep 16 05:55:06 IST 2026] SKAB file=4 seed=1
+Device: mps, seed: 1
+Dataset: skab 4
+  Train shape: (573, 8), Test shape: (1095, 8)
+  Test anomaly rate: 0.319
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4307
+  epoch  2/15  loss=0.4350
+  epoch  3/15  loss=0.4215
+  epoch  4/15  loss=0.4107
+  epoch  5/15  loss=0.4083
+  epoch  6/15  loss=0.4012
+  epoch  7/15  loss=0.3865
+  epoch  8/15  loss=0.3770
+  epoch  9/15  loss=0.3638
+  epoch 10/15  loss=0.3505
+  epoch 11/15  loss=0.3439
+  epoch 12/15  loss=0.3359
+  epoch 13/15  loss=0.3250
+  epoch 14/15  loss=0.3276
+  epoch 15/15  loss=0.3225
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 4
+Model: LSTM forecasting (T=96, tau=24), seed=1
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.7402
+Test PR-AUC: 0.4808
+Test anomaly rate: 0.319
+==============================================================
+
+Saved: notes/lstm_baseline_skab_4_seed1.txt
+
+[Wed Sep 16 05:55:09 IST 2026] SKAB file=4 seed=42
+Device: mps, seed: 42
+Dataset: skab 4
+  Train shape: (573, 8), Test shape: (1095, 8)
+  Test anomaly rate: 0.319
+LSTM params: 227,520
+
+Training 15 epochs, hidden=128, layers=2, batch=64, lr=0.00015
+  epoch  1/15  loss=0.4350
+  epoch  2/15  loss=0.4365
+  epoch  3/15  loss=0.4232
+  epoch  4/15  loss=0.4177
+  epoch  5/15  loss=0.4101
+  epoch  6/15  loss=0.3920
+  epoch  7/15  loss=0.3859
+  epoch  8/15  loss=0.3694
+  epoch  9/15  loss=0.3586
+  epoch 10/15  loss=0.3494
+  epoch 11/15  loss=0.3411
+  epoch 12/15  loss=0.3332
+  epoch 13/15  loss=0.3266
+  epoch 14/15  loss=0.3237
+  epoch 15/15  loss=0.3208
+Wall-clock training: 0.0 min
+
+LSTM FORECASTING BASELINE
+==============================================================
+Dataset: skab 4
+Model: LSTM forecasting (T=96, tau=24), seed=42
+Hyperparameters: hidden=128, num_layers=2, dropout=0.1
+LSTM params: 227,520
+Training: 15 epochs, batch 64, lr=0.00015
+Wall-clock: 0.0 min on mps
+
+Test AUROC: 0.7392
+Test PR-AUC: 0.4781
+Test anomaly rate: 0.319
+==============================================================
+
+Saved: notes/lstm_baseline_skab_4_seed42.txt
+
+[Wed Sep 16 05:55:12 IST 2026] Done. Results in notes/lstm_baseline_*.txt

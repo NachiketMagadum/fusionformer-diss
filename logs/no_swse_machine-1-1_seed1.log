@@ -1,0 +1,57 @@
+Device: mps, seed: 1
+Dataset: smd machine-1-1
+  Train shape: (28479, 38), Test shape: (28479, 38)
+  Test anomaly rate: 0.095
+Variant: no_swse  (use_swse=False, use_mswea=True)
+Fusionformer params: 4,561,728
+Discriminator params: 600,449
+
+Training 15 epochs with paper-matched hyperparameters:
+  d_model=252, n_heads=6, L_seg=4, T=96, tau=24
+Traceback (most recent call last):
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/train_ff_forecast_and_score_anomaly.py", line 299, in <module>
+    main()
+    ~~~~^^
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/train_ff_forecast_and_score_anomaly.py", line 266, in main
+    train_fusionformer_adversarial(model, disc, X_train_s, SEQ_LEN, PRED_LEN)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/train_ff_forecast_and_score_anomaly.py", line 145, in train_fusionformer_adversarial
+    y_pred = model(x_batch)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/fusionformer_true.py", line 308, in forward
+    u = block(u)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/fusionformer_true.py", line 213, in forward
+    u = self.ffn1(u)    # FFN with residual+LN
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/nachiket/Brunel/DESSERTATION/Claude_Diss/fusionformer_true.py", line 182, in forward
+    return self.norm(u + self.ff(u))
+                         ~~~~~~~^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/activation.py", line 816, in forward
+    return F.gelu(input, approximate=self.approximate)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 18.10 GiB, other allocations: 1.39 GiB, max allowed: 20.13 GiB). Tried to allocate 897.75 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

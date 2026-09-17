@@ -1,0 +1,9 @@
+_archive/
+datasets/MSL_tmp/
+datasets/nasa-anomaly-detection-dataset-smap-msl.zip
+datasets/MSL/train/
+datasets/MSL/test/
+*.docx
+__pycache__/
+*.pyc
+.DS_Store

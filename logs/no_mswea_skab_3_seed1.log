@@ -1,0 +1,45 @@
+Device: mps, seed: 1
+Dataset: skab 3
+  Train shape: (573, 8), Test shape: (1148, 8)
+  Test anomaly rate: 0.352
+Variant: no_mswea  (use_swse=True, use_mswea=False)
+Effective batch size: 64
+Fusionformer params: 1,725,216
+Discriminator params: 139,649
+
+Training 15 epochs with paper-matched hyperparameters:
+  d_model=252, n_heads=6, L_seg=4, T=96, tau=24
+  epoch  1/15  pred_MSE=0.4148  D_loss=nan  F_loss=0.4148
+  epoch  2/15  pred_MSE=0.3405  D_loss=nan  F_loss=0.3405
+  epoch  3/15  pred_MSE=0.3186  D_loss=nan  F_loss=0.3186
+  epoch  4/15  pred_MSE=0.3063  D_loss=nan  F_loss=0.3063
+  epoch  5/15  pred_MSE=0.2997  D_loss=nan  F_loss=0.2997
+  epoch  6/15  pred_MSE=0.2990  D_loss=nan  F_loss=0.2990
+  epoch  7/15  pred_MSE=0.2906  D_loss=nan  F_loss=0.2906
+  epoch  8/15  pred_MSE=0.2863  D_loss=nan  F_loss=0.2863
+  epoch  9/15  pred_MSE=0.2843  D_loss=nan  F_loss=0.2843
+  epoch 10/15  pred_MSE=0.2843  D_loss=nan  F_loss=0.2843
+  epoch 11/15  pred_MSE=0.2828  D_loss=nan  F_loss=0.2828
+  epoch 12/15  pred_MSE=0.2770  D_loss=nan  F_loss=0.2770
+  epoch 13/15  pred_MSE=0.2740  D_loss=nan  F_loss=0.2740
+  epoch 14/15  pred_MSE=0.2760  D_loss=nan  F_loss=0.2760
+  epoch 15/15  pred_MSE=0.2702  D_loss=nan  F_loss=0.2702
+Training took 0.2 min
+
+Scoring test set via forecast error...
+
+FAITHFUL FUSIONFORMER RESULTS (per Wang et al. 2025)
+==============================================================
+Dataset: skab 3
+Model: Fusionformer forecasting (T=96, tau=24), seed=1
+Hyperparameters (paper-matched): d_model=252, n_heads=6, L_seg=4, N_enc=1, N_dec=1
+Fusionformer params: 1,725,216, Discriminator params: 139,649
+Training: 15 epochs, batch 64, lr_F=0.00015, lr_D=7.5e-05, adv weight=0.0
+Wall-clock: 0.2 min on mps
+
+Test AUROC: 0.9504
+Test PR-AUC: 0.9460
+Test anomaly rate: 0.352
+==============================================================
+
+Saved: notes/ff_true_no_mswea_skab_3_seed1.txt

@@ -1,0 +1,9 @@
+[Tue Sep 15 18:36:01 IST 2026] Starting paper-hparam sanity run
+  Dataset: SMD machine-1-1
+  Seed: 0
+  Hyperparameters: d_model=256, n_heads=8, L_seg=32, N_enc=4, N_dec=3, batch=32, epochs=30, lr=5e-4
+  Output file: notes/ff_paperhp_full_smd_machine-1-1_seed0.txt
+  Full log:    notes/paper_hparam_run_20260915_183601.log
+
+
+[Tue Sep 15 19:17:08 IST 2026] Done. Result file: notes/ff_paperhp_full_smd_machine-1-1_seed0.txt
